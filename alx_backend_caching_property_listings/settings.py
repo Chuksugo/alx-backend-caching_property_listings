@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'properties',
-    'django_redis',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +80,7 @@ DATABASES = {
         'NAME': 'propertydb',
         'USER': 'propertyuser',
         'PASSWORD': 'propertypass',
-        'HOST': 'postgres',   # matches service name in docker-compose
+        'HOST': 'localhost',   # matches service name in docker-compose
         'PORT': 5432,
     }
 }
